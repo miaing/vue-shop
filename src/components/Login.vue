@@ -63,7 +63,7 @@ export default {
        //login 为数据接口，loginForm为拿到的表单对象的数据
        const {data:res} = await this.$http.post("login",this.loginForm);
         // console.log(res);
-       if(res.meta.status !== 200) return this.$message.error('登录错误');;
+       if(res.meta.status !== 200) return this.$message.error('登录错误');
        this.$message.success('登录成功')
        /*
         1.第一步：登录成功之后的token的保存，需要保存到sessionStorage中
@@ -74,8 +74,7 @@ export default {
        
        
        */ 
-      console.log(res);
-      window.sessionStorage.setItem('token',res.datatoken);
+      window.sessionStorage.setItem("token", res.data.token);
       this.$router.push('/home');
 
      })
