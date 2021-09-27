@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import { Button , Form, FormItem, Input,Container,Header
   ,Aside,Main,Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem,Card,Row,Col
-,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox} from 'element-ui'
+,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox, Tag, Tree, Select,Option} from 'element-ui'
 
 //导入弹框提示组件组件
 import {Message} from 'element-ui'
@@ -28,6 +28,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 //挂在在原型链上，之后所有的组件都可通过$message来调用弹窗提示
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
