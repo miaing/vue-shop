@@ -2,7 +2,8 @@ import Vue from 'vue'
 import { Button , Form, FormItem, Input,Container,Header
   ,Aside,Main,Menu,Submenu,MenuItem,Breadcrumb,BreadcrumbItem,Card,Row,Col
 ,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox, 
-Tag, Tree, Select,Option,Cascader,Alert,Tabs,TabPane} from 'element-ui'
+Tag, Tree, Select,Option,Cascader,Alert,Tabs,TabPane,Steps,Step
+,CheckboxGroup,Checkbox,Upload} from 'element-ui'
 
 //导入弹框提示组件组件
 import {Message} from 'element-ui'
@@ -37,6 +38,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
 //挂在在原型链上，之后所有的组件都可通过$message来调用弹窗提示
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
